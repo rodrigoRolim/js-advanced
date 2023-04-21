@@ -1,0 +1,24 @@
+^\d{3}.\d{3}.\d{3}-\d{2}$
+123.123.123-23
+054.467.373-50
+999.999.999-99
+
+[.-] - vazio
+
+Wendel, Erick
+Rodrigo, Rolim
+Joana, Darc
+
+replace ^(\w+),\s(\w+)$ por
+{firstName: "$2", lastName: "$1"}
+
+\[(.*?)\]\(([http|https].*?)\)
+
+O [Rodrigo Rolim](https://www.linkedin.com/in/rodrigo-rolim-veras-0971a4130/) faz palestras muito legais e você devia segui-lo no [linkedin](https://www.linkedin.com/in/rodrigo-rolim-veras-0971a4130/) ou até no [instagram](https://www.linkedin.com/in/rodrigo-rolim-veras-0971a4130/)
+
+Ah e você pode pesquisar também la no [google](http://www.google.com/search?q=rodrigo+rolim+veras&oq=rodrigo+rolim+veras&aqs=chrome..69i57j69i61j69i60j69i61.4150j0j15&sourceid=chrome&ie=UTF-8)
+
+ou vai se fuder
+
+\[(.*?)\]\(([http|https].*?)\) por
+<a href="$2">$1</a>
