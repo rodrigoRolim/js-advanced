@@ -8,12 +8,28 @@ class ProductDataBuilder {
       id: '000001',
       name: 'computer',
       price: 1000,
-      category: 'electronic'
+      category: 'eletronic'
     }
   }
 
   static aProduct() {
     return new ProductDataBuilder()
+  }
+  withInvalidId() {
+    this.productData.id = '1'
+    return this
+  }
+  withInvalidName() {
+    this.productData.name = 'abc.123'
+    return this
+  }
+  withInvalidPrice() {
+    this.productData.price = 2000
+    return this
+  }
+  withInvalidCategory() {
+    this.productData.category = 'mecanic'
+    return this
   }
   build() {
     const product = new Product(this.productData)
