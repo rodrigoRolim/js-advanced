@@ -4,7 +4,7 @@ import MongoDBStrategy from "./src/strategies/mongoDBStrategy.js"
 
 const postegresConnectionString = "postgres://rodrigo:senha001@localhost:5432/heroes";
 const postegresContext = new ContextStrategy(new PostegresStrategy(postegresConnectionString))
-const result = await postegresContext.connect()
+await postegresContext.connect()
 
 const mongoDBConnectionString = "mongodb://rodrigo:senhaadmin@127.0.0.1:27017/heroes"
 const mongoDBContext = new ContextStrategy(new MongoDBStrategy(mongoDBConnectionString))

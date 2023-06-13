@@ -1,0 +1,15 @@
+list(100)
+setBreakingpoint(13)
+ setBreakpoint(13)
+cont
+exec req
+removeBreakpoint(13)
+setBreakpoint(14)
+cont
+exec req
+exec req
+exec req.url
+exec new URLSearchParams(req.url)
+exec new URLSearchParams(req.url).get('salary')
+exec new URLSearchParams(req.url).get('discount')
+exec new URLSearchParams(req.url).get('/?salary')
