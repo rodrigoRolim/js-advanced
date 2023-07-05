@@ -1,7 +1,7 @@
 import fsPromises from 'fs/promises'
 import fs from 'fs'
-import templates from './templates'
-import Util from './util'
+import templates from './templates/index.js'
+import Util from './util.js'
 
 const defaultDependencies = (layer, componentName) => {
   // padrão HashMap
